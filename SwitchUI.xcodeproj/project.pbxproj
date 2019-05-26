@@ -266,17 +266,20 @@
 					3C80487A1E5906AF00918705 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 4UE95LJ5MB;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					3C80488E1E5906AF00918705 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = GGAXD5EY64;
+						DevelopmentTeam = 4UE95LJ5MB;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3C80487A1E5906AF00918705;
 					};
 					3C8048991E5906AF00918705 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = GGAXD5EY64;
+						DevelopmentTeam = 4UE95LJ5MB;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3C80487A1E5906AF00918705;
 					};
@@ -514,7 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUI.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -527,7 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUI.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -536,12 +539,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = GGAXD5EY64;
+				DEVELOPMENT_TEAM = 4UE95LJ5MB;
 				INFOPLIST_FILE = SwitchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchUI.app/SwitchUI";
 			};
 			name = Debug;
@@ -551,12 +554,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = GGAXD5EY64;
+				DEVELOPMENT_TEAM = 4UE95LJ5MB;
 				INFOPLIST_FILE = SwitchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchUI.app/SwitchUI";
 			};
 			name = Release;
@@ -565,12 +568,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = GGAXD5EY64;
+				DEVELOPMENT_TEAM = 4UE95LJ5MB;
 				INFOPLIST_FILE = SwitchUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwitchUI;
 			};
 			name = Debug;
@@ -579,12 +582,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = GGAXD5EY64;
+				DEVELOPMENT_TEAM = 4UE95LJ5MB;
 				INFOPLIST_FILE = SwitchUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randomdudes.SwitchUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwitchUI;
 			};
 			name = Release;
