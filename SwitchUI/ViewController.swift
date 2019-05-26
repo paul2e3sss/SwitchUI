@@ -28,7 +28,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    splash = (self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenSw"))! as! StartViewController
+    splash = self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenSw") as? StartViewController
     self.addChildViewController(splash)
     self.view.addSubview(splash.view)
     let a = NSLayoutConstraint(item: splash.view, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
@@ -70,7 +70,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     }
   }
   
-  func currentTime() -> Void{
+  @objc func currentTime() -> Void{
     let crnt = NSDate()
     let cal = Calendar.current
     let h = cal.component(.hour, from: crnt as Date)
