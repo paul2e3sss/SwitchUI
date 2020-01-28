@@ -28,14 +28,17 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    splash = (self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenSw"))! as! StartViewController
-    self.addChildViewController(splash)
-    self.view.addSubview(splash.view)
-    let a = NSLayoutConstraint(item: splash.view, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
-    let b = NSLayoutConstraint(item: splash.view, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
-    let c = NSLayoutConstraint(item: splash.view, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1, constant: 0)
-    let d = NSLayoutConstraint(item: splash.view, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .height, multiplier: 1, constant: 0)
-    self.view.addConstraints([a,b,c,d])
+    splash = self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenSw") as? StartViewController
+    self.addChild(splash)
+    
+    if let splashView = self.splash.view {
+        self.view.addSubview(splashView)
+        let a = NSLayoutConstraint(item: splashView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        let b = NSLayoutConstraint(item: splashView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+        let c = NSLayoutConstraint(item: splashView, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1, constant: 0)
+        let d = NSLayoutConstraint(item: splashView, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .height, multiplier: 1, constant: 0)
+        self.view.addConstraints([a,b,c,d])
+    }
     
     self.currentTime()
     
@@ -50,7 +53,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     Timer.scheduledTimer(withTimeInterval: 3, repeats: false) {[weak self] (t:Timer) in
       if let ss = self{
         ss.splash.view.removeFromSuperview()
-        ss.splash.removeFromParentViewController()
+        ss.splash.removeFromParent()
       }
     }
     
@@ -70,7 +73,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     }
   }
   
-  func currentTime() -> Void{
+  @objc func currentTime() -> Void{
     let crnt = NSDate()
     let cal = Calendar.current
     let h = cal.component(.hour, from: crnt as Date)
